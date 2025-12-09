@@ -75,18 +75,18 @@ jobs:
         echo "::endgroup::"
         ls ${GITHUB_WORKSPACE}
 
-    - name: Clean-up
-      uses: rokibhasansagar/slimhub_actions@main
+#    - name: Clean-up
+ #     uses: rokibhasansagar/slimhub_actions@main
 
     - name: Swap Space
       uses: pierotofy/set-swap-space@master
       with:
         swap-size-gb: 24
       
-#    - name: Build Environment
- #     run: |
-#        sudo apt update
-#        sudo apt -y upgrade
+    - name: Build Environment
+      run: |
+   #     sudo apt update
+    #    sudo apt -y upgrade
   #      git clone https://gitlab.com/OrangeFox/misc/scripts
  #       cd scripts
 #        sudo bash setup/android_build_env.sh
