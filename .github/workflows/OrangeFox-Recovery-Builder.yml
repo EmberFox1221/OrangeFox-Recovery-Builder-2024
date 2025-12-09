@@ -85,8 +85,8 @@ jobs:
       
     - name: Build Environment
       run: |
-   #     sudo apt update
-    #    sudo apt -y upgrade
+        #sudo apt update
+        #sudo apt -y upgrade
         git clone https://gitlab.com/OrangeFox/misc/scripts
         cd scripts
         sudo bash setup/android_build_env.sh
