@@ -99,7 +99,39 @@ jobs:
         git clone https://gitlab.com/OrangeFox/sync.git
         cd sync
         ./orangefox_sync.sh --branch ${{ github.event.inputs.MANIFEST_BRANCH }} --path ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}
-
+        cd ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}/gui/theme
+        rm -rf ./common/languages/cs.xml
+        rm -rf ./common/languages/de.xml
+        rm -rf ./common/languages/el.xml
+        rm -rf ./common/languages/fr.xml
+        rm -rf ./common/languages/id.xml
+        rm -rf ./common/languages/it.xml
+        rm -rf ./common/languages/pl*
+        rm -rf ./common/languages/ro.xml
+        rm -rf ./common/languages/ru.xml
+        rm -rf ./common/languages/tr.xml
+        rm -rf ./common/languages/ua.xml
+        rm -rm ./portrait_hdpi/images/black
+        rm -rm ./portrait_hdpi/images/Dblack
+        rm -rm ./portrait_hdpi/images/cinnamon
+        rm -rm ./portrait_hdpi/images/dcinnamon
+        rm -rm ./portrait_hdpi/images/google
+        rm -rm ./portrait_hdpi/images/dgoogle
+        rm -rm ./portrait_hdpi/images/dlollipop
+        rm -rm ./portrait_hdpi/images/lollipops
+        rm -rm ./portrait_hdpi/images/dgreen
+        rm -rm ./portrait_hdpi/images/green
+        rm -rm ./portrait_hdpi/images/ocean
+        rm -rm ./portrait_hdpi/images/orchid
+        rm -rm ./portrait_hdpi/images/dorchid
+        rm -rm ./portrait_hdpi/images/red
+        rm -rm ./portrait_hdpi/images/dred
+        rm -rm ./portrait_hdpi/images/space
+        rm -rm ./portrait_hdpi/images/dspace
+        rm -rm ./portrait_hdpi/images/yellow
+        rm -rm ./portrait_hdpi/images/dyellow
+        
+        
     - name: Clone Device Tree
       run: |
         cd ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}
