@@ -114,25 +114,25 @@ jobs:
         rm -rf ./common/languages/ru.xml
         rm -rf ./common/languages/tr.xml
         rm -rf ./common/languages/ua.xml
-        rm -rf ./portrait_hdpi/images/black
-        rm -rf ./portrait_hdpi/images/Dblack
-        rm -rf ./portrait_hdpi/images/cinnamon
-        rm -rf ./portrait_hdpi/images/dcinnamon
-        rm -rf ./portrait_hdpi/images/google
-        rm -rf ./portrait_hdpi/images/dgoogle
-        rm -rf ./portrait_hdpi/images/dlollipop
-        rm -rf ./portrait_hdpi/images/lollipops
-        rm -rf ./portrait_hdpi/images/dgreen
-        rm -rf ./portrait_hdpi/images/green
-        rm -rf ./portrait_hdpi/images/ocean
-        rm -rf ./portrait_hdpi/images/orchid
-        rm -rf ./portrait_hdpi/images/dorchid
-        rm -rf ./portrait_hdpi/images/red
-        rm -rf ./portrait_hdpi/images/dred
-        rm -rf ./portrait_hdpi/images/space
-        rm -rf ./portrait_hdpi/images/dspace
-        rm -rf ./portrait_hdpi/images/yellow
-        rm -rf ./portrait_hdpi/images/dyellow
+        rm -rf ./portrait_hdpi/images/black/
+        rm -rf ./portrait_hdpi/images/Dblack/
+        rm -rf ./portrait_hdpi/images/cinnamon/
+        rm -rf ./portrait_hdpi/images/dcinnamon/
+        rm -rf ./portrait_hdpi/images/google/
+        rm -rf ./portrait_hdpi/images/dgoogle/
+        rm -rf ./portrait_hdpi/images/dlollipop/
+        rm -rf ./portrait_hdpi/images/lollipops/
+        rm -rf ./portrait_hdpi/images/dgreen/
+        rm -rf ./portrait_hdpi/images/green/
+        rm -rf ./portrait_hdpi/images/ocean/
+        rm -rf ./portrait_hdpi/images/orchid/
+        rm -rf ./portrait_hdpi/images/dorchid/
+        rm -rf ./portrait_hdpi/images/red/
+        rm -rf ./portrait_hdpi/images/dred/
+        rm -rf ./portrait_hdpi/images/space/
+        rm -rf ./portrait_hdpi/images/dspace/
+        rm -rf ./portrait_hdpi/images/yellow/
+        rm -rf ./portrait_hdpi/images/dyellow/
         
         
     - name: Clone Device Tree
