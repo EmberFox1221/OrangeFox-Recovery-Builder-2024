@@ -75,8 +75,8 @@ jobs:
         echo "::endgroup::"
         ls ${GITHUB_WORKSPACE}
 
-#    - name: Clean-up
- #     uses: rokibhasansagar/slimhub_actions@main
+    - name: Clean-up
+      uses: rokibhasansagar/slimhub_actions@main
 
     - name: Swap Space
       uses: pierotofy/set-swap-space@master
