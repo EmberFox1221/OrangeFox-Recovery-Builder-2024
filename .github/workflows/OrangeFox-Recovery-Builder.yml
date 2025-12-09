@@ -101,8 +101,8 @@ jobs:
         git clone https://gitlab.com/OrangeFox/sync.git
         cd sync
         ./orangefox_sync.sh --branch ${{ github.event.inputs.MANIFEST_BRANCH }} --path ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}
-        ls ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}
-        cd ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}/recovery/gui/theme
+        ls ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}/bootable
+        cd ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}/bootable/recovery/gui/theme
         rm -rf ./common/languages/cs.xml
         rm -rf ./common/languages/de.xml
         rm -rf ./common/languages/el.xml
@@ -114,25 +114,25 @@ jobs:
         rm -rf ./common/languages/ru.xml
         rm -rf ./common/languages/tr.xml
         rm -rf ./common/languages/ua.xml
-        rm -rm ./portrait_hdpi/images/black
-        rm -rm ./portrait_hdpi/images/Dblack
-        rm -rm ./portrait_hdpi/images/cinnamon
-        rm -rm ./portrait_hdpi/images/dcinnamon
-        rm -rm ./portrait_hdpi/images/google
-        rm -rm ./portrait_hdpi/images/dgoogle
-        rm -rm ./portrait_hdpi/images/dlollipop
-        rm -rm ./portrait_hdpi/images/lollipops
-        rm -rm ./portrait_hdpi/images/dgreen
-        rm -rm ./portrait_hdpi/images/green
-        rm -rm ./portrait_hdpi/images/ocean
-        rm -rm ./portrait_hdpi/images/orchid
-        rm -rm ./portrait_hdpi/images/dorchid
-        rm -rm ./portrait_hdpi/images/red
-        rm -rm ./portrait_hdpi/images/dred
-        rm -rm ./portrait_hdpi/images/space
-        rm -rm ./portrait_hdpi/images/dspace
-        rm -rm ./portrait_hdpi/images/yellow
-        rm -rm ./portrait_hdpi/images/dyellow
+        rm -rf ./portrait_hdpi/images/black
+        rm -rf ./portrait_hdpi/images/Dblack
+        rm -rf ./portrait_hdpi/images/cinnamon
+        rm -rf ./portrait_hdpi/images/dcinnamon
+        rm -rf ./portrait_hdpi/images/google
+        rm -rf ./portrait_hdpi/images/dgoogle
+        rm -rf ./portrait_hdpi/images/dlollipop
+        rm -rf ./portrait_hdpi/images/lollipops
+        rm -rf ./portrait_hdpi/images/dgreen
+        rm -rf ./portrait_hdpi/images/green
+        rm -rf ./portrait_hdpi/images/ocean
+        rm -rf ./portrait_hdpi/images/orchid
+        rm -rf ./portrait_hdpi/images/dorchid
+        rm -rf ./portrait_hdpi/images/red
+        rm -rf ./portrait_hdpi/images/dred
+        rm -rf ./portrait_hdpi/images/space
+        rm -rf ./portrait_hdpi/images/dspace
+        rm -rf ./portrait_hdpi/images/yellow
+        rm -rf ./portrait_hdpi/images/dyellow
         
         
     - name: Clone Device Tree
